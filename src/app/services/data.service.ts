@@ -37,7 +37,7 @@ export class DataService {
     this.experience = [
       {
         enterprise: "Grupo TVCable",
-        img: "curriculum/assets/img/tvcable.jfif",
+        img: "assets/img/tvcable.jfif",
         content: "Intern at Grupo TVCable company, in the Systems area.  In this job, I carried out quality control activities and support in the development of new company plans handling PL / SQL. Also I use SCRUM methodology in this company"
       },
       {
