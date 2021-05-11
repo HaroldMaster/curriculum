@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './../services/data.service'
 import { GitService } from './../services/git.service'
 import { AboutmeService } from './../services/aboutme.service'
-import {environment} from './../../environments/environment'
+import {environment} from './../../environments/environment.prod'
 
 @Component({
   selector: 'app-curriculum',
