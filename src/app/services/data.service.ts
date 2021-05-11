@@ -42,17 +42,17 @@ export class DataService {
       },
       {
         enterprise: "Imprenta Mariscal",
-        img:  "curriculum/assets/img/imprenta.png",
+        img:  "/assets/img/imprenta.png",
         content: "Intern at Imprenta Mariscal industry, in the area of Systems and Databases. I carried out activities such as network management, computer and printer maintenance, user support, backup management, database management, among others."
       },
       {
         enterprise: "PACO",
-        img: "curriculum/assets/img/paco.png",
+        img: "/assets/img/paco.png",
         content: "Developer analyst at PACO comercial company. I managed the billing system developed in Java with PostgreSQL database, also handling stored procedures in the SQL Server database."
       },
       {
         enterprise: "CLEARMINDS",
-        img: "curriculum/assets/img/clearminds.jfif",
+        img: "/assets/img/clearminds.jfif",
         content: "Software Developer at Clearminds company. I worked in banking software consulting services where I used Scrum Methodology and tools such as Angular, Javascript, Java, Sql Server as well as the company's own tools."
       }
     ]
