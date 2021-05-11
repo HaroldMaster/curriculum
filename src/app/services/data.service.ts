@@ -38,7 +38,7 @@ export class DataService {
       {
         enterprise: "Grupo TVCable",
         img: environment.url+ "/assets/img/tvcable.jfif",
-        content: "Intern at Grupo TVCable company, in the Systems area.  In this job, I carried out quality control activities and support in the development of new company plans handling PL / SQL."
+        content: "Intern at Grupo TVCable company, in the Systems area.  In this job, I carried out quality control activities and support in the development of new company plans handling PL / SQL. Also I use SCRUM methodology in this company"
       },
       {
         enterprise: "Imprenta Mariscal",
@@ -53,7 +53,7 @@ export class DataService {
       {
         enterprise: "CLEARMINDS",
         img: environment.url+"/assets/img/clearminds.jfif",
-        content: "Software Developer at Clearminds company. I worked in banking software consulting services where I used tools such as Angular, Javascript, Java, Sql Server as well as the company's own tools."
+        content: "Software Developer at Clearminds company. I worked in banking software consulting services where I used Scrum Methodology and tools such as Angular, Javascript, Java, Sql Server as well as the company's own tools."
       }
     ]
   }
