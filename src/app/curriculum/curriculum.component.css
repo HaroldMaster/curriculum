@@ -1,0 +1,250 @@
+:host{
+    height: 100%;
+}
+h1{
+    font-size: 40px;
+}
+.nombre {
+    font-weight: 500;
+}
+.contenedor{
+    margin: 25px auto;
+    background-color: white;
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    color: black;
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.hijo {
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.skill {
+    border-right: 1px solid grey;
+    justify-content: start;
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+}
+.experience {
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.card{
+    border: 1px solid grey;
+}
+.avatar-harold{
+    border-radius: 100%;
+    width: 30%;
+}
+.avatar-harold:hover{
+    position: relative;
+    transform: rotateY(360deg);
+    transition: transform 3s ease-out;
+      
+}
+i{
+    transition: all .3s;
+    font-size:40px;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+i:hover, i:active{
+    transform: translateY(-10px) scale(1.3);
+} 
+
+a{
+    text-decoration: none;
+}
+.img-content{
+    max-height: 200px;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 5px 10px #0b6096;
+}
+
+.mat-card-avatar{
+    position: relative;
+    display: inline-block;
+    backface-visibility: hidden;
+}
+.mat-card-avatar:hover{
+    transform: translateY(0px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+}
+.mat-card-avatar:hover::after{
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+.mat-card-avatar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+.mat-card-avatar-white{
+    background-color: white;
+}
+.mat-card-avatar-white::after{
+    background-color: #0b6096;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #0b6096;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  .image-popup-container{
+      display: flex;
+      flex-direction: column;
+      margin: 40px;
+  }
+  .image-popup{
+      padding-top: 30px;
+      max-height: 100px;
+      max-width: 100px;
+  }
+  .about-me{
+      border: 2px solid 45494C;
+      appearance: button;
+      -moz-appearance: button;
+      -webkit-appearance: button;
+      border-radius: 30px;
+      font-size: 17px;
+      margin-bottom: 5px;
+      background: #45494C;
+      color:white;
+      cursor: pointer;
+      padding: 10px;
+      font-weight: 500;
+  }
+  .about-me:visited{
+      color: white;
+  }
+  .about-me:active{
+      transform: translateY(1px);
+  }
+  .about-me:hover{
+      font-size: 18px;
+  }
+  
+  a{
+      color: #0b6096;
+      cursor: pointer;
+  }
+
+  a:visited{
+      color: #0b6096;
+  }
+  .meet-me{
+      font-weight: bold;
+  }
+  .projects:hover{
+    font-size: 17px;
+    text-decoration: underline #0b6096;
+  }
+@media only screen and (max-width: 600px) {
+    .header{
+        display: block;
+    }
+    .skill, .experience{
+        width: 92%;
+    }
+    .skill{
+        border: none;
+    }
+    .card:hover{
+        box-shadow: 5px 10px #45494C;
+    }
+    .mat-card-avatar-white::after{
+        background-color: #45494C;
+    }
+    .image-popup-container{
+        display: flex;
+        flex-direction: column;
+    }
+    i:hover,i:active{
+        transform: none;
+        user-select: none;
+    } 
+
+}
+@media only screen and (max-width: 1000px) {
+    .popup{
+        width: 80%;
+    }
+    #popup1{
+        overflow: scroll;
+    }
+    
+}

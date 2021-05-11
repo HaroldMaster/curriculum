@@ -1,0 +1,164 @@
+<div class="contenedor">
+    <div class="header">
+      <div class="img-github hijo" *ngIf="_git.getUser | async as harold">
+        <h1 class='nombre'>{{ harold.name }}</h1>
+        <p>{{ harold.bio }}</p>
+        <a href="https://github.com/HaroldMaster" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="mailto:bhflores1994@gmail.com" target="_blank"
+          ><i class="fas fa-envelope-square"></i
+        ></a>
+        <a href="https://api.whatsapp.com/send?phone=593999981332" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+    <hr />
+  
+    <div class="header">
+      <div class="skill">
+        <h2>ABOUT ME</h2>
+          <div *ngFor="let parragraph of about.aboutMe | keyvalue">
+            <p>{{parragraph.value}}</p>
+          </div>
+          <div class="image-popup-container">
+            <img class="image-popup" src="{{environment.url}}/assets/img/angular.png" alt="" srcset="">
+            <img class="image-popup" src="{{environment.url}}/assets/img/css.png" alt="" srcset="">
+            <img class="image-popup" src="{{environment.url}}/assets/img/sass.png" alt="" srcset="">
+            <img class="image-popup" src="{{environment.url}}/assets/img/typescript.png" alt="" srcset="">
+          </div>
+          
+      </div>
+      <div class="experience">
+        <h2>EXPERIENCE</h2>
+        <div *ngFor="let experience of data.experience">
+          <mat-card class="card">
+            <mat-card-header>
+              <div
+                mat-card-avatar class="mat-card-avatar-white"
+                [ngStyle]="{
+                  'background-image': 'url(' + experience.img + ')',
+                  'background-size': 'cover'
+                }"
+              ></div>
+              <mat-card-title>{{ experience.enterprise }}</mat-card-title>
+            </mat-card-header>
+            <br />
+            <mat-card-content>
+              <p>
+                {{ experience.content }}
+              </p>
+            </mat-card-content>
+          </mat-card>
+          <br />
+        </div>
+        <h2>LANGUAGES</h2>
+        <ul>
+          <li>English - B1 Certificate</li>
+        </ul>
+        <h2>HIGHLIGHTS</h2>
+        <ul>
+          <li>
+            Publication of a scientific article in the IEEE database with the
+            topic: Serious Game, Gamified Applications, Educational Software: A
+            Comparative Study (10.1109 / ICI2ST.2019.00015)
+            <p><a class="projects" href="https://ieeexplore.ieee.org/document/8940385" target="_blank"
+              >https://ieeexplore.ieee.org/document/8940385</a></p>
+          </li>
+        </ul>
+        <h2>PROJECTS</h2>
+        <ul>
+          <li>
+            <a class="projects" href="https://haroldmaster.github.io/borradore4f/" target="_blank"
+              >Tourism Operator Template with Sass</a
+            >
+          </li>
+          <li>
+            <a class="projects" href="https://haroldmaster.github.io/Tutorial-Git/" target="_blank"
+              >Git Tutorial</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/Tutorial-Github/"
+              target="_blank"
+              >Github Tutorial</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/Tips-y-metodos-utiles-de-Javascript/"
+              target="_blank"
+              >Javascript Methods</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/calculator/"
+              target="_blank"
+              >Calculator (Using Jest and Storybooks)</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/verifyCode/"
+              target="_blank"
+              >Code Verificator (Using Jest (TDD), Storybooks and Figma Template)</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/formulario-solo-con-DOM-validado/"
+              target="_blank"
+              >DOM Formulary</a
+            >
+          </li>
+          <li>
+            <a class="projects" href="https://haroldmaster.github.io/fetch/" target="_blank"
+              >Fetch Use</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/prank-propuesta/"
+              target="_blank"
+              >Prank</a
+            >
+          </li>
+          <li>
+            <a class="projects" href="https://haroldmaster.github.io/sass-and-css/" target="_blank"
+              >Sass</a
+            >
+          </li>
+          <li>
+            <a
+              class="projects"
+              href="https://haroldmaster.github.io/animaciones-eventos-jquery/"
+              target="_blank"
+              >JQuery</a
+            >
+          </li>
+        </ul>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2 class="meet-me">Meet me</h2>
+            <a class="close" href="{{environment.url}}/#">&times;</a>
+            <div class="content">
+              <p>Hi, I’m Harold, I’m a Systems Engineer who likes frontend development, I have estudied to develop Angular apps with responsive designs that could work across all browsers with interfaces that are usable and pleasant for people.</p>
+              <p>I am a person who likes learn new tecnologies and that is why i have been studied some courses in udemy like Typescript, Sass and Css, Angular, Javascript and more. Also I like help other people and that is why I have been doing tutorials about several things in github using github pages.</p>
+              <p>My professional life started building websites for small businesses with Wordpress where I learned several complementary skills such as Digital Marketing, SEO and others, also I have worked with Databases, Infraestructure and recently I was working doing banking software using Javascript, Java and SQL Databases.</p>
+              <p>Right now, I’m excited about front end web development and I hope becoming better each day with new challenges and goals to meet.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

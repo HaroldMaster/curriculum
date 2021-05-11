@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { 
+    background-color: rgba(0,0,255,0.3);
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#contenedor-total{
+    overflow: hidden;
+}
+.mat-typography p{
+    margin: 15px;
+}
+@media only screen and (max-width: 1000px) {
+    html, body { 
+        background-color: rgba(0,0,0,0.5);
+    }
+}
