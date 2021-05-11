@@ -37,22 +37,22 @@ export class DataService {
     this.experience = [
       {
         enterprise: "Grupo TVCable",
-        img: environment.url+ "/assets/img/tvcable.jfif",
+        img: "curriculum/assets/img/tvcable.jfif",
         content: "Intern at Grupo TVCable company, in the Systems area.  In this job, I carried out quality control activities and support in the development of new company plans handling PL / SQL. Also I use SCRUM methodology in this company"
       },
       {
         enterprise: "Imprenta Mariscal",
-        img: environment.url+ "/assets/img/imprenta.png",
+        img:  "curriculum/assets/img/imprenta.png",
         content: "Intern at Imprenta Mariscal industry, in the area of Systems and Databases. I carried out activities such as network management, computer and printer maintenance, user support, backup management, database management, among others."
       },
       {
         enterprise: "PACO",
-        img: environment.url+"/assets/img/paco.png",
+        img: "curriculum/assets/img/paco.png",
         content: "Developer analyst at PACO comercial company. I managed the billing system developed in Java with PostgreSQL database, also handling stored procedures in the SQL Server database."
       },
       {
         enterprise: "CLEARMINDS",
-        img: environment.url+"/assets/img/clearminds.jfif",
+        img: "curriculum/assets/img/clearminds.jfif",
         content: "Software Developer at Clearminds company. I worked in banking software consulting services where I used Scrum Methodology and tools such as Angular, Javascript, Java, Sql Server as well as the company's own tools."
       }
     ]
